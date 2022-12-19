@@ -1,0 +1,33 @@
+.searchbar-home {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    input {
+        width: 750px;
+        padding: 20px;
+        border-radius: 40px;
+        border: 2px white solid;
+        background-color: transparent;
+        font-size: 20px;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    .searchbar-icon {
+        font-size: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 20px;
+        background-color: $tag_color;
+
+        &:hover {
+            background-color: lighten($tag_color, 10%);
+            transition: ease-in-out 0.15s;
+        }
+    }
+}
