@@ -1,0 +1,23 @@
+.container-formations {
+    padding-top: 100px;
+    text-align: center;
+
+    .top_card_title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .top_card_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top_card {
+        padding-top: 60px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: $white;
+        color: #000;
+    }
+}

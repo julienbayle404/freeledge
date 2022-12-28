@@ -1,0 +1,130 @@
+header {
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+
+    &.inverted {
+        background-color: rgb(31, 31, 31);
+        box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    }
+
+    .leftside-header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        #logofreeledge {
+            width: 75px;
+            border-radius: 50%;
+            box-shadow: white 0px 0px 8px 3px; 
+        }
+
+        .under_logo-header {
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+
+    .rightside-header {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .navbar-header {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            height: 100%;
+        }
+
+        .onglet_navbar-header {
+            margin-right: 20px;
+            font-weight: 500;
+            color: $white;
+
+            &:hover {
+
+                > a {
+                    transition: all 0.3s ease;
+                    color: $tag_color;
+                }
+            }
+        }
+
+        .icon_navbar-header {
+            margin-right: 20px;
+            font-size: 20px;
+            font-weight: 700 !important;
+
+            &:hover {
+                transition: all ease 0.3s;
+                color: $tag_color;
+            }
+        }
+
+        #onglet_formations {
+            position: relative;
+
+            &:hover {
+                .dropdown_navbar-header {
+                    display: block;
+                }
+            }
+        }
+
+        .dropdown_navbar-header {
+            position: absolute;
+            display: none;
+            font-size: 14px;
+            background-color: #4e5457;
+            padding: 8px 15px;
+        }
+
+        .menu_hamburger-header {
+            display: none;
+            position: absolute;
+            right: 35px;
+            top: 35px;
+            width: 35px;
+            filter: invert(100%) sepia(100%) saturate(21%) hue-rotate(213deg) brightness(105%) contrast(100%);
+        }
+    }
+
+    @media screen and (max-width: 600px) { 
+
+        .rightside-header {
+
+            .navbar-header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: red;
+            }
+
+            .onglet_navbar-header {
+                width: 100%;
+            }
+
+            .menu_hamburger-header {
+                display: block;
+            }
+        }
+    }
+}
