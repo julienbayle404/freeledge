@@ -27,7 +27,7 @@ body {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background-color: $color_primary;
+    background-color: $color_secondary;
     color: white;
 }
 
@@ -60,6 +60,7 @@ a {
 }
 
 .center {
+    width: 100%;
     margin: 0 auto;
     max-width: 1200px;
 }

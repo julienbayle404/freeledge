@@ -1,23 +1,22 @@
 .top_container-home {
-    padding-top: 200px;
+    padding: 200px 0 50px 0;
     text-align: center;
 
     .welcometext-home {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         font-size: 24px;
     }
 
     .searchbar_title-home {
-        font-weight: 900;
-        font-size: 36px;
+        font-weight: 700;
+        font-size: clamp(24px, 2.5vw, 36px);
         margin-bottom: 20px;
     }
 
     .searchbar_exemples-home {
         font-size: 12px;
         margin-top: 8px;
-        text-align: start;
-        margin-left: 200px;
+        text-align: center;
     }
 
     .review_stars-home {
@@ -40,33 +39,42 @@
 }
 
 .next_sessions_container-home {
-    margin-top: 61px;
     position: relative;
     background-color: $color_secondary;
     text-align: center;
     padding-bottom: 60px;
 
-    .subtitle-home {
-        padding-top: 50px;
-        margin-bottom: 25px;
+    .center {
+        display: flex;
+        width: 100%;
+        gap: 40px;
+        flex-flow: column wrap;
+        justify-content: center;
     }
 
-    .next_sessions_card-home {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding-bottom: 50px;
+    h2 {
+        padding-top: 50px;
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        gap: 2em;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
     .session_card-home {
         position: relative;
         width: 350px;
+        max-width: 100%;
         height: 350px;
         background-image: url(images/photobureau1.png);
         background-size: cover;
+        justify-self: space-around;
 
         &:hover {
-
             .session_card_description-home {
                 transition: all 0.3s ease;
                 height: 100%;
@@ -74,8 +82,7 @@
                 background-color: rgba(0,0,0,0.7);
             }
 
-            .session_card_lieu-home,
-            .session_card_date-home {
+            .session_card_infos-home {
                 display: block;
             }
         }
@@ -92,20 +99,10 @@
         background-color: $color_transparent;
         width: 100%;
         height: 40%;
-        padding: 20px;
+        padding: 10px 20px;
     }
 
-    .session_card_review-home {
-        display: flex;
-        gap: 10px;
-
-        p {
-            font-weight: 700;
-        }
-    }
-
-    .session_card_lieu-home,
-    .session_card_date-home {
+    .session_card_infos-home {
         display: none;
     }
 }
@@ -119,6 +116,7 @@
         margin: 10px 0 25px 0;
     }
 
+    /*
     .finance_cards_bloc-home {
         width: auto;
         display: flex;
@@ -128,6 +126,20 @@
 
         a {
             width: 25%;
+        }
+    }
+    */
+    .finance_cards_bloc-home {
+        padding: 0 20px;
+        display: grid;
+        width: 100%;
+        gap: 2em;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        a {
+            width: 100%;
         }
     }
 
@@ -158,7 +170,8 @@
     .finance_card-home img {
         position: absolute;
         display: block;
-        width: 250px;
+        padding: 0 12px;
+        width: 100%;
         height: 160px;
         bottom: 20px;
         transform: translateX(-50%);
@@ -167,20 +180,29 @@
 }
 
 .satisfaction_client_container-home {
-    padding: 50px 0;
+    padding: 50px 20px;
     background-color: $color_secondary;
-    height: 30vh;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 50px;
 
     .satisfaction_client_card-home {
+        text-align: center;
+        width: 25%;
+
+        @media (401px <= width <= 800px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 100%;
+        }
 
         img {
             object-fit: cover;
             width: 100px;
             height: 100px;
+            margin: 0 auto 15px auto;
         }
     }
 }

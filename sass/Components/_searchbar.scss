@@ -1,12 +1,14 @@
 .searchbar-home {
+    position: relative;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
     gap: 20px;
 
     input {
-        width: 750px;
+        width: clamp(500px, 75%, 750px);
         padding: 20px;
         border-radius: 40px;
         border: 2px $white solid;
@@ -27,14 +29,15 @@
     }
 
     .searchbar-icon {
+        position: relative;
         font-size: 30px;
         border: 2px solid $white;
         border-radius: 50%;
         padding: 20px;
-        background-color: $tag_color;
+        background-color: rgb(138, 197, 63);
 
         &:hover {
-            background-color: lighten($tag_color, 10%);
+            background-color: lighten(rgb(138, 197, 63), 10%);
             transition: ease-in-out 0.15s;
         }
     }

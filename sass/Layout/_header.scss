@@ -60,12 +60,20 @@ header {
                     color: $tag_color;
                 }
             }
+
+            @media screen and (max-width: 1000px) {
+                font-size: 12px;
+            }
+
         }
 
         .icon_navbar-header {
             margin-right: 20px;
             font-size: 20px;
-            font-weight: 700 !important;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 14px;
+            }
 
             &:hover {
                 transition: all ease 0.3s;
@@ -87,7 +95,7 @@ header {
             position: absolute;
             display: none;
             font-size: 14px;
-            background-color: #4e5457;
+            background-color: rgb(78, 84, 87, 0.4);
             padding: 8px 15px;
         }
 
@@ -97,13 +105,16 @@ header {
             right: 35px;
             top: 35px;
             width: 35px;
+            cursor: pointer;
             filter: invert(100%) sepia(100%) saturate(21%) hue-rotate(213deg) brightness(105%) contrast(100%);
         }
     }
 
-    @media screen and (max-width: 600px) { 
+    @media screen and (max-width: 800px) { 
 
         .rightside-header {
+
+            width: 100%;
 
             .navbar-header {
                 position: absolute;
@@ -115,15 +126,31 @@ header {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                background-color: red;
+                background-color: rgba(255, 255, 255, 0.20);
+                backdrop-filter: blur(10px);
+                margin-left: -100vw;
+                transition: all 0.5s ease;
+
+                li {
+                    margin-top: 25px;
+                    font-size: 1.5em;
+                }
             }
 
             .onglet_navbar-header {
                 width: 100%;
             }
 
+            .icon_navbar-header {
+                font-size: 20px;
+            }
+
             .menu_hamburger-header {
                 display: block;
+            }
+
+            .mobile-menu {
+                margin-left: 0;
             }
         }
     }

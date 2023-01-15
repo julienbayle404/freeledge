@@ -37,7 +37,12 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-certif">
+                <img src="images/certif/logoqualiopitransparent.png" alt="Logo Certification Qualiopi">
+            </div>
         </div>
     </footer>
+    
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+  // Couleurs pour la ligne de cercles décoratifs //
+
+@keyframes appear {
+  from {    
+    opacity: 0;
+  }
+
+  to {   
+    opacity: 1;
+  }
+}
+
+.frise-circles {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    opacity: 0;
+  }
+  .circ-blue-1 {
+    background-color: rgb(0, 172, 206);
+    animation: 3s forwards 0s appear;
+  }
+  .circ-blue-2 {
+    background-color: rgb(0, 170, 171);
+    animation: 3s forwards 0.25s appear;
+  }
+  .circ-green-1 {
+    background-color: rgb(11, 181, 146);
+    animation: 3s forwards 0.5s appear;
+  }
+  .circ-green-2 {
+    background-color: rgb(138, 197, 63);
+    animation: 3s forwards 0.75s appear;
+  }
+  .circ-yellow-1 {
+    background-color: rgb(253, 179, 20);
+    animation: 3s forwards 1s appear;
+  }
+  .circ-yellow-2 {
+    background-color: rgb(249, 158, 41);
+    animation: 3s forwards 1.25s appear;
+  }
+  .circ-orange-1 {
+    background-color: rgb(246, 139, 41);
+    animation: 3s forwards 1.5s appear;
+  }
+  .circ-orange-2 {
+    background-color: rgb(240, 123, 44);
+    animation: 3s forwards 1.75s appear;
+  }
+  .circ-orange-3 {
+    background-color: rgb(241, 92, 34);
+    animation: 3s forwards 2s appear;
+  }
+  .circ-red-1 {
+    background-color: rgb(237, 23, 77);
+    animation: 3s forwards 2.25s appear;
+  }
+  .circ-pink-1 {
+    background-color: rgb(233, 19, 118);
+    animation: 3s forwards 2.5s appear;
+  }
+  .circ-purple-1 {
+    background-color: rgb(180, 72, 155);
+    animation: 3s forwards 2.75s appear;
+  }
+  .circ-purple-2 {
+    background-color: rgb(111, 73, 157);
+    animation: 3s forwards 3s appear;
+  }
+}

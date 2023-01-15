@@ -7,12 +7,19 @@
     z-index: -1;
     opacity: 0.5;
     overflow: hidden;
+    object-fit: cover;
+    background-image: url(images/photobureau4.png);
+    background-size: cover;
 
     #background_video-home {
         position: relative;
         width: 100%;
         top: 0;
         left: 0;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
 }
 

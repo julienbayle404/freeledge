@@ -1,0 +1,117 @@
+.container-formation {
+
+    .upper-part {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        height: 400px;
+        gap: 30px;
+
+        h1 {
+            font-size: 24px;
+
+            &:after {
+                content: "";
+                width: 100%;
+                display: block;
+                background-color: $white;
+                height: 2px;
+                
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        padding: 50px 120px;
+        line-height: 2em;
+
+        .left-part {
+            position: relative;
+            width: 60%;
+
+            &::after {
+                position: absolute;
+                margin: 0 20px;
+                right: 0;
+                top: 0;
+                content: "";
+                background-color: $white;
+                width: 1px;
+                height: 100%;
+                display: block;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            li {
+                list-style-type: disc;
+                font-size: 16px;
+            }
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .right-part {
+            display: flex;
+            align-items: flex-start;
+            flex-flow: column wrap;
+            width: 40%;
+
+            h3 {
+                margin: 20px 0 8px 0;
+            }
+
+            .rectangle {
+                padding: 2px 8px;
+                background-color: rgb(146, 143, 143);
+                border-radius: 10px;
+            }
+
+            .social-links a {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: $white;
+                margin: 0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: $color_primary;
+                transition: all 0.3s ease;
+              }
+              .social-links a:hover {
+                color: $white;
+                background-color: $tag_color;
+              }
+        }
+    }
+}
+
+.yellow {
+    background-image: linear-gradient(to bottom, rgba(253, 180, 20, 0.1), rgba(253, 180, 20, 0.8)), url(images/photobureau4.png);
+    background-size: cover;
+}
+
+.green {
+    background-image: linear-gradient(to bottom, rgba(138, 197, 63, 0.1), rgba(138, 197, 63, 0.8)), url(images/photobureau4.png);
+    background-size: cover;
+}
+
+.blue {
+    background-image: linear-gradient(to bottom, rgba(0, 172, 206, 0.1), rgba(0, 172, 206, 0.8)), url(images/photobureau4.png);
+    background-size: cover;
+}
