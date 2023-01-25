@@ -34,11 +34,49 @@
         border: 2px solid $white;
         border-radius: 50%;
         padding: 20px;
-        background-color: rgb(138, 197, 63);
 
         &:hover {
-            background-color: lighten(rgb(138, 197, 63), 10%);
-            transition: ease-in-out 0.15s;
+            transition: all 0.15s ease;
         }
+    }
+}
+
+.searchbar-blue {
+    background-color: $blue;
+
+    &:hover {
+        background-color: darken($blue, 10%);
+    }
+}
+
+.searchbar-green {
+    background-color: $green;
+    
+    &:hover {
+        background-color: darken($green, 10%);
+    }
+}
+
+.searchbar-orange {
+    background-color: $orange;
+
+    &:hover {
+        background-color: darken($orange, 15%);
+    }
+}
+
+.searchbar-red {
+    background-color: $red;
+
+    &:hover {
+        background-color: darken($red, 15%);
+    }
+}
+
+.searchbar-purple {
+    background-color: $purple;
+
+    &:hover {
+        background-color: darken($purple, 10%);
     }
 }

@@ -40,17 +40,17 @@
     <section class="next_sessions_container-home">
         <div class="center">
             <h2 class="subtitle-home">Nos prochaines sessions</h2>
-            <div class="grid">
+            <div class="container">
                 <article class="session_card-home">
                     <div class="session_card_description-home">
                         <h3 class="session_card_description_title-home">
                             Agilité : Principes & Méthodologies
                         </h3>
                         <div class="session_card_infos-home">
-                            <p class="card_enjeux">Hello</p>
-                            <p class="card_dates">24 juin au 30 janvier</p>
-                            <p class="card_duree">15h</p>
-                            <p class="card_prix">30€</p>
+                            <p class="card_enjeux">Enjeux professionnels : Adopter un état d'esprit agile et connaitre le sens des méthodologies y afférentes constituent un levier de facilitation mais aussi de perfectionnement de la transition d'une méthode classique vers une logique agile.</p>
+                            <p class="card_dates">Dates : 12 décembre et 13 décembre 2022</p>
+                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                            <p class="card_prix">Prix : 1200€</p>
                         </div>
                         <button onclick="window.location.href = 'formation1.php';" class="btn-learn-more">
                             En savoir plus
@@ -63,8 +63,10 @@
                             Transformation digitale : Enjeux & Implémentation
                         </h3>
                         <div class="session_card_infos-home">
-                            <p>hello</p>
-                            <p>24 juin au 30 janvier</p>
+                            <p class="card_enjeux">Enjeux professionnels : Opter pour l'optique proactive devrait permettre à l'organisation de mieux se préparer pour les futurs impacts du passage à l'ère digitale mais encore et surtout réussir à y participer activement.</p>
+                            <p class="card_dates">Dates : indéterminées</p>
+                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                            <p class="card_prix">Prix : 1200€</p>
                         </div>
                         <button onclick="window.location.href = 'formation2.php';" class="btn-learn-more">
                             En savoir plus
@@ -77,8 +79,10 @@
                             Optimiser l'expérience client
                         </h3>
                         <div class="session_card_infos-home">
-                            <p>hello</p>
-                            <p>24 juin au 30 janvier</p>
+                            <p class="card_enjeux">Enjeux professionnels : Se servir du merchandising comme levier de rentabilité</p>
+                            <p class="card_dates">Dates : à définir</p>
+                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                            <p class="card_prix">Prix : à définir</p>
                         </div>
                         <button onclick="window.location.href = 'formation3.php';" class="btn-learn-more">
                             En savoir plus
@@ -97,9 +101,9 @@
 <!-- Partie financement de formation -->
 
     <section class="finance_container-home">
-        <div class="center">
-            <h2 class="subtitle-home">Financez votre formation en 2023</h2>
-            <p class="description_subtitle-home">Nos conseillers sont là pour vous aider à activer vos leviers de financement.</p>
+        <div class="container">
+            <h2 class="subtitle-home">Mettez en place votre plan de formation</h2>
+            <p class="description_subtitle-home">Freeledge est à votre disposition afin de vous aider à trouver la formation qui vous correspond.</p>
             <div class="finance_cards_bloc-home">
                 <a href="#">
                     <article class="finance_card-home">
@@ -152,7 +156,7 @@
             <p>Stagiaires</p>
         </div>
         <div class="satisfaction_client_card-home">
-            <img src="images/icons/content.png" alt="Icône emoji content">
+            <img src="images/icons/heureux.png" alt="Icône emoji content">
             <h4>95%</h4>
             <p>Satisfaction Stagiaires</p>
         </div>
@@ -161,24 +165,32 @@
 <!-- Partie reconversion -->
 
     <section class="reconversion_job_container-home">
-        <div class="center">
-            <h2 class="reconversion_job_container_title-home">Vous souhaitez vous reconvertir professionnellement ?</h2>
-            <p class="reconversion_job_container_description-home">Découvrez toutes les offres de reskilling disponibles chez Freeledge</p>
+        <div class="container">
+            <h2 class="container-title">Vous souhaitez vous former dans un secteur en particulier ?</h2>
+            <p class="container-description">Découvrez toutes les formations disponibles chez Freeledge, classées par type de performance.</p>
             <div class="reconversion_job_cards_container-home">
                 <a class="reconversion_job_card_link-home" href="#">
-                    <article class="reconversion_job_card-home">
-                        <p class="reconversion_job_card_tag-home">Reskilling</p>
-                        <h3 class="reconversion_job_card_title-home">DevOps</h3>
-                        <img src="images/photobureau3.png" alt="Image de la formation [nom de la formation]">
-                        <h4 class="reconversion_job_card_date-home">Formation Inter - 399 heures</h4>
+                    <article class="reconversion_job_card-home perf-digitale">
+                        <p class="reconversion_job_card_tag-home">Formations</p>
+                        <h3 class="reconversion_job_card_title-home">Performance digitale</h3>
+                        <img src="images/photobureau4.png" alt="Image de la formation [nom de la formation]">
+                        <button class="btn-go-to-formations btn-perf-digitale">Voir formations</button>
                     </article>
                 </a>
                 <a class="reconversion_job_card_link-home" href="#">
-                    <article class="reconversion_job_card-home">
-                        <p class="reconversion_job_card_tag-home">Reskilling</p>
-                        <h3 class="reconversion_job_card_title-home">Analyste Big Data</h3>
+                    <article class="reconversion_job_card-home perf-economique">
+                        <p class="reconversion_job_card_tag-home">Formations</p>
+                        <h3 class="reconversion_job_card_title-home">Performance économique</h3>
                         <img src="images/photobureau4.png" alt="Image de la formation [nom de la formation]">
-                        <h4 class="reconversion_job_card_date-home">Formation Inter - 399 heures</h4>
+                        <button class="btn-go-to-formations btn-perf-economique">Voir formations</button>
+                    </article>
+                </a>
+                <a class="reconversion_job_card_link-home" href="#">
+                    <article class="reconversion_job_card-home perf-informatique">
+                        <p class="reconversion_job_card_tag-home">Formations</p>
+                        <h3 class="reconversion_job_card_title-home">Performance informatique</h3>
+                        <img src="images/photobureau4.png" alt="Image de la formation [nom de la formation]">
+                        <button class="btn-go-to-formations btn-perf-informatique">Voir formations</button>
                     </article>
                 </a>
             </div>

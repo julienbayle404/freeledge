@@ -20,24 +20,49 @@
             <a href="index.php">
                 <img src="images/logofreeledge.jpg" alt="Logo de Freeledge" id=logofreeledge>
             </a>
-            <p class="under_logo-header">
-                Organisme de formation
-            </p>
         </div>
         <nav role="navigation" class="rightside-header">
             <ul id="navbar" class="navbar-header">
                 <li class="onglet_navbar-header" id="onglet_formations">
-                    <a href="formations.php">Formations</a>
-                    <ul class="dropdown_navbar-header">
+                    <a href="formations.php" class="blue">Formations</a>
+                    <ul class="dropdown_navbar-header" id="dropdown-formations">
                         <li><a href="#">Informatique</a></li>
                         <li><a href="#">Economique</a></li>
                         <li><a href="#">Digitale</a></li>
                     </ul>
                 </li>
-                <li class="onglet_navbar-header"><a href="#">Ressources</a></li>
-                <li class="onglet_navbar-header"><a href="#">Financements</a></li>
-                <li class="onglet_navbar-header"><a href="#">Freeledge</a></li>
-                <li class="onglet_navbar-header"><a href="infospratiques.php">Informations</a></li>
+                <li class="onglet_navbar-header">
+                    <a href="#" class="green">Ressources</a>
+                    <ul class="dropdown_navbar-header" id="dropdown-ressources">
+                        <li><a href="#">Formateurs</a></li>
+                        <li><a href="#">Conseillers</a></li>
+                        <li><a href="#">Compétences</a></li>
+                    </ul>
+                </li>
+                <li class="onglet_navbar-header">
+                    <a href="#" class="orange">Financements</a>
+                    <ul class="dropdown_navbar-header" id="dropdown-financements">
+                        <li><a href="#">Informatique</a></li>
+                        <li><a href="#">Economique</a></li>
+                        <li><a href="#">Digitale</a></li>
+                    </ul>
+                </li>
+                <li class="onglet_navbar-header">
+                    <a href="#" class="red">Freeledge</a>
+                    <ul class="dropdown_navbar-header" id="dropdown-freeledge">
+                        <li><a href="#">Informatique</a></li>
+                        <li><a href="#">Economique</a></li>
+                        <li><a href="#">Digitale</a></li>
+                    </ul>
+                </li>
+                <li class="onglet_navbar-header">
+                    <a href="infospratiques.php" class="purple">Informations</a>
+                    <ul class="dropdown_navbar-header" id="dropdown-informations">
+                        <li><a href="#">Informatique</a></li>
+                        <li><a href="#">Economique</a></li>
+                        <li><a href="#">Digitale</a></li>
+                    </ul>
+                </li>
                 <li><a href="#"><i class="fa-solid fa-user icon_navbar-header"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-envelope icon_navbar-header"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass icon_navbar-header"></i></a></li>

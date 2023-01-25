@@ -2,7 +2,7 @@ header {
     transition: background-color 0.3s ease;
     background-color: transparent;
     width: 100%;
-    height: 110px;
+    height: 120px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -12,10 +12,14 @@ header {
     align-items: center;
     padding: 10px 40px;
 
+// Pour le header qui s'affiche après le scroll
+
     &.inverted {
         background-color: rgb(31, 31, 31);
         box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
     }
+
+// Côté gauche du header
 
     .leftside-header {
         display: flex;
@@ -25,16 +29,13 @@ header {
         gap: 5px;
 
         #logofreeledge {
-            width: 75px;
+            width: 100px;
             border-radius: 50%;
             box-shadow: white 0px 0px 8px 3px; 
         }
-
-        .under_logo-header {
-            font-size: 10px;
-            font-weight: 400;
-        }
     }
+
+// Côté droit du header
 
     .rightside-header {
         height: 100%;
@@ -48,16 +49,53 @@ header {
             height: 100%;
         }
 
+// Code pour les onglets de la navbar
+
         .onglet_navbar-header {
-            margin-right: 20px;
+            position: relative;
             font-weight: 500;
             color: $white;
 
+            a {
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+            }
+            
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #ccc;
+            }
+
             &:hover {
+
+                background-color: $white;
+
+                .dropdown_navbar-header {
+                    display: block;
+                }
 
                 > a {
                     transition: all 0.3s ease;
-                    color: $tag_color;
+                }
+
+                .blue {
+                    color: $blue;
+                }
+                .green {
+                    color: $green;
+                }
+                .orange {
+                    color: $orange;
+                }
+                .red {
+                    color: $red;
+                }
+                .purple {
+                    color: $purple;
                 }
             }
 
@@ -68,7 +106,7 @@ header {
         }
 
         .icon_navbar-header {
-            margin-right: 20px;
+            margin-left: 20px;
             font-size: 20px;
 
             @media screen and (max-width: 1000px) {
@@ -77,26 +115,37 @@ header {
 
             &:hover {
                 transition: all ease 0.3s;
-                color: $tag_color;
-            }
-        }
-
-        #onglet_formations {
-            position: relative;
-
-            &:hover {
-                .dropdown_navbar-header {
-                    display: block;
-                }
+                color: grey;
             }
         }
 
         .dropdown_navbar-header {
-            position: absolute;
             display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
             font-size: 14px;
             background-color: rgb(78, 84, 87, 0.4);
-            padding: 8px 15px;
+
+            &#dropdown-formations {
+                background-color: $blue;
+            }
+
+            &#dropdown-ressources {
+                background-color: $green;
+            }
+
+            &#dropdown-financements {
+                background-color: $orange;
+            }
+
+            &#dropdown-freeledge {
+                background-color: $red;
+            }
+
+            &#dropdown-informations {
+                background-color: $purple;
+            }
         }
 
         .menu_hamburger-header {

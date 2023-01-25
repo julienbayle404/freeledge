@@ -1,7 +1,7 @@
 <?php include ("header.php"); ?>
 
 <section class="container-formation">
-    <div class="upper-part green">
+    <div class="upper-part bg-green">
         <h1>Formations</h1>
         <h2>Optimiser l'expérience client</h2>
     </div>
