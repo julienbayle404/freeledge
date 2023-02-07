@@ -41,56 +41,62 @@
         <div class="center">
             <h2 class="subtitle-home">Nos prochaines sessions</h2>
             <div class="container">
-                <article class="session_card-home">
-                    <div class="session_card_description-home">
-                        <h3 class="session_card_description_title-home">
-                            Agilité : Principes & Méthodologies
-                        </h3>
-                        <div class="session_card_infos-home">
-                            <p class="card_enjeux">Enjeux professionnels : Adopter un état d'esprit agile et connaitre le sens des méthodologies y afférentes constituent un levier de facilitation mais aussi de perfectionnement de la transition d'une méthode classique vers une logique agile.</p>
-                            <p class="card_dates">Dates : 12 décembre et 13 décembre 2022</p>
-                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
-                            <p class="card_prix">Prix : 1200€</p>
+                <a href="formation1.php">
+                    <article class="session_card-home">
+                        <div class="session_card_description-home">
+                            <h3 class="session_card_description_title-home">
+                                Agilité : Principes & Méthodologies
+                            </h3>
+                            <div class="session_card_infos-home">
+                                <p class="card_enjeux">Enjeux professionnels : Adopter un état d'esprit agile et connaitre le sens des méthodologies y afférentes constituent un levier de facilitation mais aussi de perfectionnement de la transition d'une méthode classique vers une logique agile.</p>
+                                <p class="card_dates">Dates : 12 décembre et 13 décembre 2022</p>
+                                <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                                <p class="card_prix">Prix : 1200€</p>
+                            </div>
+                            <button onclick="window.location.href = 'formation1.php';" class="btn-learn-more">
+                                En savoir plus
+                            </button>
                         </div>
-                        <button onclick="window.location.href = 'formation1.php';" class="btn-learn-more">
-                            En savoir plus
-                        </button>
-                    </div>
-                </article>
-                <article class="session_card-home">
-                    <div class="session_card_description-home">
-                        <h3 class="session_card_description_title-home">
-                            Transformation digitale : Enjeux & Implémentation
-                        </h3>
-                        <div class="session_card_infos-home">
-                            <p class="card_enjeux">Enjeux professionnels : Opter pour l'optique proactive devrait permettre à l'organisation de mieux se préparer pour les futurs impacts du passage à l'ère digitale mais encore et surtout réussir à y participer activement.</p>
-                            <p class="card_dates">Dates : indéterminées</p>
-                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
-                            <p class="card_prix">Prix : 1200€</p>
+                    </article>
+                </a>
+                <a href="formation2.php">
+                    <article class="session_card-home">
+                        <div class="session_card_description-home">
+                            <h3 class="session_card_description_title-home">
+                                Transformation digitale : Enjeux & Implémentation
+                            </h3>
+                            <div class="session_card_infos-home">
+                                <p class="card_enjeux">Enjeux professionnels : Opter pour l'optique proactive devrait permettre à l'organisation de mieux se préparer pour les futurs impacts du passage à l'ère digitale mais encore et surtout réussir à y participer activement.</p>
+                                <p class="card_dates">Dates : indéterminées</p>
+                                <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                                <p class="card_prix">Prix : 1200€</p>
+                            </div>
+                            <button onclick="window.location.href = 'formation2.php';" class="btn-learn-more">
+                                En savoir plus
+                            </button>
                         </div>
-                        <button onclick="window.location.href = 'formation2.php';" class="btn-learn-more">
-                            En savoir plus
-                        </button>
-                    </div>
-                </article>
-                <article class="session_card-home">
-                    <div class="session_card_description-home">
-                        <h3 class="session_card_description_title-home">
-                            Optimiser l'expérience client
-                        </h3>
-                        <div class="session_card_infos-home">
-                            <p class="card_enjeux">Enjeux professionnels : Se servir du merchandising comme levier de rentabilité</p>
-                            <p class="card_dates">Dates : à définir</p>
-                            <p class="card_duree">Durée : 2 jours (14 heures)</p>
-                            <p class="card_prix">Prix : à définir</p>
+                    </article>
+                </a>
+                <a href="formation3.php">
+                    <article class="session_card-home">
+                        <div class="session_card_description-home">
+                            <h3 class="session_card_description_title-home">
+                                Optimiser l'expérience client
+                            </h3>
+                            <div class="session_card_infos-home">
+                                <p class="card_enjeux">Enjeux professionnels : Se servir du merchandising comme levier de rentabilité</p>
+                                <p class="card_dates">Dates : à définir</p>
+                                <p class="card_duree">Durée : 2 jours (14 heures)</p>
+                                <p class="card_prix">Prix : à définir</p>
+                            </div>
+                            <button onclick="window.location.href = 'formation3.php';" class="btn-learn-more">
+                                En savoir plus
+                            </button>
                         </div>
-                        <button onclick="window.location.href = 'formation3.php';" class="btn-learn-more">
-                            En savoir plus
-                        </button>
-                    </div>
-                </article>
+                    </article>
+                </a>
             </div>
-            <a href="#">
+            <a href="#" id="btn_next_sessions_link">
                 <button class="btn_next_sessions-home" type="button">
                     Consultez nos sessions
                 </button>

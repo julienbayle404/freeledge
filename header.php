@@ -24,7 +24,7 @@
         <nav role="navigation" class="rightside-header">
             <ul id="navbar" class="navbar-header">
                 <li class="onglet_navbar-header" id="onglet_formations">
-                    <a href="formations.php" class="blue">Formations</a>
+                    <a href="#" class="blue">Formations</a>
                     <ul class="dropdown_navbar-header" id="dropdown-formations">
                         <li><a href="#">Informatique</a></li>
                         <li><a href="#">Economique</a></li>

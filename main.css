@@ -200,7 +200,7 @@ h3 {
 
 .btn-learn-more {
   display: none;
-  background-color: transparent;
+  background-color: rgb(0, 102, 255);
   padding: 10px 18px;
   color: #fff;
   border: 1px solid #fff;
@@ -214,8 +214,8 @@ h3 {
 .btn-learn-more:hover {
   transition: all 0.3s ease;
   background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
+  color: rgb(0, 102, 255);
+  border: 1px solid rgb(0, 102, 255);
 }
 
 .btn-inscription {
@@ -240,6 +240,12 @@ h3 {
   margin-top: 30px;
   font-size: 18px;
   font-weight: 700;
+}
+@media (max-width: 1089px) {
+  .btn-go-to-formations {
+    padding: 10px 50px;
+    justify-self: center;
+  }
 }
 
 .btn-perf-digitale {
@@ -285,7 +291,7 @@ h3 {
   gap: 20px;
 }
 .searchbar-home input {
-  width: clamp(500px, 75%, 750px);
+  width: clamp(300px, 75%, 750px);
   padding: 20px;
   border-radius: 40px;
   border: 2px #fff solid;
@@ -404,6 +410,13 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
+.footer .row::after {
+  content: "";
+  margin: 15px 0;
+  width: 100%;
+  height: 2px;
+  background: #2f3436;
+}
 .footer ul {
   list-style: none;
 }
@@ -461,16 +474,42 @@ h3 {
   background-color: rgb(255, 73, 73);
 }
 
-.footer-certif {
-  margin-top: 30px;
-  padding: 0 15px;
+.footer-down {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer-down img {
+  height: 100px;
+}
+.footer-down .leftpart {
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
 }
-.footer-certif img {
-  height: 150px;
+.footer-down .footer-logo {
+  display: flex;
+  align-items: center;
+}
+.footer-down .footer-certif {
+  display: flex;
+}
+.footer-down .footer-certif img {
+  height: 100px;
   filter: grayscale(100%);
+}
+.footer-down .rightpart {
+  display: flex;
+  gap: 30px;
+  list-style-type: disc;
+}
+.footer-down .rightpart li:hover {
+  text-decoration: underline;
+}
+.footer-down .rightpart #nostyle-li {
+  list-style: none;
 }
 
 /* RESPONSIVE */
@@ -479,10 +518,26 @@ h3 {
     width: 50%;
     margin-bottom: 30px;
   }
+  .leftpart {
+    width: 100%;
+    justify-content: center;
+  }
+  .rightpart {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+  }
+}
+@media (max-width: 485px) {
+  .footer-down {
+    gap: 25px;
+  }
+  #footer-down-leftpart {
+    gap: 0px;
   }
 }
 header {
@@ -510,10 +565,14 @@ header .leftside-header {
   justify-content: center;
   gap: 5px;
 }
-header .leftside-header #logofreeledge {
+header .leftside-header img {
   width: 100px;
   border-radius: 50%;
   box-shadow: white 0px 0px 8px 3px;
+}
+header .leftside-header .logo-white {
+  box-shadow: none;
+  border-radius: 0;
 }
 header .rightside-header {
   height: 100%;
@@ -541,16 +600,61 @@ header .rightside-header .onglet_navbar-header ul {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ccc;
+  font-size: 14px;
 }
-header .rightside-header .onglet_navbar-header:hover {
-  background-color: #fff;
+header .rightside-header .onglet_navbar-header #dropdown-formations li {
+  background-color: rgb(0, 172, 206);
 }
-header .rightside-header .onglet_navbar-header:hover .dropdown_navbar-header {
-  display: block;
+header .rightside-header .onglet_navbar-header #dropdown-formations li:hover {
+  background-color: #00819b;
+}
+header .rightside-header .onglet_navbar-header #dropdown-ressources li {
+  background-color: rgb(138, 197, 63);
+}
+header .rightside-header .onglet_navbar-header #dropdown-ressources li:hover {
+  background-color: #6fa130;
+}
+header .rightside-header .onglet_navbar-header #dropdown-financements li {
+  background-color: rgb(246, 139, 41);
+}
+header .rightside-header .onglet_navbar-header #dropdown-financements li:hover {
+  background-color: #ca6508;
+}
+header .rightside-header .onglet_navbar-header #dropdown-freeledge li {
+  background-color: rgb(237, 23, 77);
+}
+header .rightside-header .onglet_navbar-header #dropdown-freeledge li:hover {
+  background-color: #aa0d35;
+}
+header .rightside-header .onglet_navbar-header #dropdown-informations li {
+  background-color: rgb(180, 72, 155);
+}
+header .rightside-header .onglet_navbar-header #dropdown-informations li:hover {
+  background-color: #90397c;
+}
+header .rightside-header .onglet_navbar-header li {
+  opacity: 0;
+}
+header .rightside-header .onglet_navbar-header li:nth-child(1) {
+  -webkit-animation: 0.5s forwards 0s appear;
+          animation: 0.5s forwards 0s appear;
+}
+header .rightside-header .onglet_navbar-header li:nth-child(2) {
+  -webkit-animation: 0.5s forwards 0.1s appear;
+          animation: 0.5s forwards 0.1s appear;
+}
+header .rightside-header .onglet_navbar-header li:nth-child(3) {
+  -webkit-animation: 0.5s forwards 0.2s appear;
+          animation: 0.5s forwards 0.2s appear;
+}
+header .rightside-header .onglet_navbar-header > a {
+  transition: all 0.2s ease;
 }
 header .rightside-header .onglet_navbar-header:hover > a {
-  transition: all 0.3s ease;
+  background-color: #fff;
+}
+header .rightside-header .onglet_navbar-header:hover ul {
+  display: block;
 }
 header .rightside-header .onglet_navbar-header:hover .blue {
   color: rgb(0, 172, 206);
@@ -585,29 +689,6 @@ header .rightside-header .icon_navbar-header:hover {
   transition: all ease 0.3s;
   color: grey;
 }
-header .rightside-header .dropdown_navbar-header {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  font-size: 14px;
-  background-color: rgba(78, 84, 87, 0.4);
-}
-header .rightside-header .dropdown_navbar-header#dropdown-formations {
-  background-color: rgb(0, 172, 206);
-}
-header .rightside-header .dropdown_navbar-header#dropdown-ressources {
-  background-color: rgb(138, 197, 63);
-}
-header .rightside-header .dropdown_navbar-header#dropdown-financements {
-  background-color: rgb(246, 139, 41);
-}
-header .rightside-header .dropdown_navbar-header#dropdown-freeledge {
-  background-color: rgb(237, 23, 77);
-}
-header .rightside-header .dropdown_navbar-header#dropdown-informations {
-  background-color: rgb(180, 72, 155);
-}
 header .rightside-header .menu_hamburger-header {
   display: none;
   position: absolute;
@@ -638,8 +719,13 @@ header .rightside-header .menu_hamburger-header {
     transition: all 0.5s ease;
   }
   header .rightside-header .navbar-header li {
-    margin-top: 25px;
+    position: relative;
     font-size: 1.5em;
+  }
+  header .rightside-header .navbar-header li:hover ul {
+    width: 100%;
+    position: relative;
+    top: 0;
   }
   header .rightside-header .onglet_navbar-header {
     width: 100%;
@@ -673,27 +759,16 @@ header .rightside-header .menu_hamburger-header {
   margin-top: 8px;
   text-align: center;
 }
-.top_container-home .review_stars-home {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 250px;
-  margin: 40px auto;
-  gap: 10px;
-  font-size: 24px;
-}
-.top_container-home .review_stars-home p {
-  font-weight: 600;
-}
-.top_container-home .reviews_verified-home {
-  font-size: 24px;
-}
 
 .next_sessions_container-home {
   position: relative;
   background-color: #2f3436;
   text-align: center;
   padding-bottom: 60px;
+}
+.next_sessions_container-home #btn_next_sessions_link {
+  align-self: center;
+  justify-self: center;
 }
 .next_sessions_container-home .center {
   display: flex;
@@ -721,30 +796,7 @@ header .rightside-header .menu_hamburger-header {
   background-image: url(images/photobureau1.png);
   background-size: cover;
 }
-.next_sessions_container-home .session_card-home:hover .session_card_description-home {
-  transition: all 0.3s ease;
-  height: 100%;
-  justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.next_sessions_container-home .session_card-home:hover .session_card_infos-home {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 10px;
-}
-.next_sessions_container-home .session_card-home:hover .session_card_infos-home .card_enjeux {
-  font-size: 13px;
-}
-.next_sessions_container-home .session_card-home:hover .session_card_infos-home .card_dates {
-  font-size: 16px;
-}
-.next_sessions_container-home .session_card-home:hover .session_card_infos-home .card_duree {
-  font-size: 16px;
-}
-.next_sessions_container-home .session_card-home:hover .btn-learn-more {
-  display: block;
-}
-.next_sessions_container-home .session_card_description-home {
+.next_sessions_container-home .session_card-home .session_card_description-home {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -756,28 +808,44 @@ header .rightside-header .menu_hamburger-header {
   width: 100%;
   height: 40%;
   padding: 10px 20px;
+  overflow: hidden;
 }
-.next_sessions_container-home .session_card_infos-home {
-  display: none;
+.next_sessions_container-home .session_card-home .session_card_description-home h3 {
+  margin-bottom: 15px;
+}
+.next_sessions_container-home .session_card-home .session_card_infos-home {
+  opacity: 0;
+}
+.next_sessions_container-home .session_card-home:hover .session_card_description-home {
+  transition: all 0.3s ease;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  top: 0;
+}
+.next_sessions_container-home .session_card-home:hover .session_card_infos-home {
+  -webkit-animation: 0.5s forwards 0s appear;
+          animation: 0.5s forwards 0s appear;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+  font-size: 15px;
+}
+.next_sessions_container-home .session_card-home:hover .session_card_infos-home .card_enjeux {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.next_sessions_container-home .session_card-home:hover .btn-learn-more {
+  display: block;
 }
 
 .finance_container-home {
   text-align: center;
   background-color: #212628;
   padding: 50px 0;
-  /*
-  .finance_cards_bloc-home {
-      width: auto;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background-color: $color_primary;
-
-      a {
-          width: 25%;
-      }
-  }
-  */
 }
 .finance_container-home .description_subtitle-home {
   margin: 10px 0 25px 0;
@@ -823,8 +891,10 @@ header .rightside-header .menu_hamburger-header {
 }
 
 .satisfaction_client_container-home {
-  padding: 50px;
-  background-color: #2f3436;
+  padding: 100px;
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url(images/fond/champs.jpg);
+  background-size: cover;
+  background-position: 50% 28%;
   height: auto;
   display: flex;
   flex-flow: wrap;
@@ -886,6 +956,18 @@ header .rightside-header .menu_hamburger-header {
   position: relative;
   width: 100%;
   height: 280px;
+}
+@media (max-width: 1089px) {
+  .reconversion_job_container-home .reconversion_job_card-home {
+    width: 400px;
+    padding: 30px 30px 15px 30px;
+  }
+  .reconversion_job_container-home .reconversion_job_card-home h3 {
+    font-size: 22px;
+  }
+  .reconversion_job_container-home .reconversion_job_card-home img {
+    height: 200px;
+  }
 }
 .reconversion_job_container-home .reconversion_job_card-home:hover {
   background-color: #474e51;

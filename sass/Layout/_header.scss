@@ -28,10 +28,15 @@ header {
         justify-content: center;
         gap: 5px;
 
-        #logofreeledge {
+        img {
             width: 100px;
             border-radius: 50%;
             box-shadow: white 0px 0px 8px 3px; 
+        }
+
+        .logo-white {
+            box-shadow: none;
+            border-radius: 0;
         }
     }
 
@@ -67,19 +72,92 @@ header {
                 position: absolute;
                 top: 100%;
                 left: 0;
-                background-color: #ccc;
+                font-size: 14px;
+            }
+
+            #dropdown-formations {
+
+                li {
+                    background-color: $blue;
+
+                    &:hover {
+                        background-color: darken($blue, 10%);
+                    }
+                }
+            }
+
+            #dropdown-ressources {
+
+                li {
+                    background-color: $green;
+
+                    &:hover {
+                        background-color: darken($green, 10%);
+                    }
+                }
+            }
+
+            #dropdown-financements {
+                
+                li {
+                    background-color: $orange;
+
+                    &:hover {
+                        background-color: darken($orange, 15%);
+                    }
+                }
+            }
+
+            #dropdown-freeledge {
+
+                li {
+                    background-color: $red;
+
+                    &:hover {
+                        background-color: darken($red, 15%);
+                    }
+                }
+            }
+
+            #dropdown-informations {
+
+                li {
+                    background-color: $purple;
+
+                    &:hover {
+                        background-color: darken($purple, 10%);
+                    }
+                }
+            }
+
+            li {
+                opacity: 0;
+            }
+
+            li:nth-child(1) {
+                animation: 0.5s forwards 0s appear;
+            }
+
+            li:nth-child(2) {
+                animation: 0.5s forwards 0.1s appear;
+            }
+
+            li:nth-child(3) {
+                animation: 0.5s forwards 0.2s appear;
+            }
+
+            > a {
+                transition: all 0.2s ease;
             }
 
             &:hover {
 
-                background-color: $white;
-
-                .dropdown_navbar-header {
-                    display: block;
+                > a {
+                    background-color: $white;
                 }
 
-                > a {
-                    transition: all 0.3s ease;
+                ul {
+                    display: block;
                 }
 
                 .blue {
@@ -119,35 +197,6 @@ header {
             }
         }
 
-        .dropdown_navbar-header {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            font-size: 14px;
-            background-color: rgb(78, 84, 87, 0.4);
-
-            &#dropdown-formations {
-                background-color: $blue;
-            }
-
-            &#dropdown-ressources {
-                background-color: $green;
-            }
-
-            &#dropdown-financements {
-                background-color: $orange;
-            }
-
-            &#dropdown-freeledge {
-                background-color: $red;
-            }
-
-            &#dropdown-informations {
-                background-color: $purple;
-            }
-        }
-
         .menu_hamburger-header {
             display: none;
             position: absolute;
@@ -180,11 +229,19 @@ header {
                 margin-left: -100vw;
                 transition: all 0.5s ease;
 
-                li {
-                    margin-top: 25px;
+                    li {
+                    position: relative;
                     font-size: 1.5em;
+
+                        &:hover {
+                            ul {
+                                width: 100%;
+                                position: relative;
+                                top: 0;
+                            }
+                        }
+                    }
                 }
-            }
 
             .onglet_navbar-header {
                 width: 100%;

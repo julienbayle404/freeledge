@@ -37,8 +37,21 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-certif">
-                <img src="images/certif/logoqualiopitransparent.png" alt="Logo Certification Qualiopi">
+            <div class="footer-down">
+                <div class="leftpart" id="footer-down-leftpart">
+                    <div class="footer-logo">
+                        <img src="images/logofreeledgewhite.png" alt="Logo Freeledge">
+                        <p>© 2023 Freeledge</p>
+                    </div>
+                    <div class="footer-certif">
+                        <img src="images/certif/logoqualiopitransparent.png" alt="Logo Certification Qualiopi">
+                    </div>
+                </div>
+                <ul class="rightpart">
+                    <li id="nostyle-li"><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGU</a></li>
+                    <li><a href="#">CGV</a></li>
+                </ul>
             </div>
         </div>
     </footer>

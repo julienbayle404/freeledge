@@ -18,24 +18,6 @@
         margin-top: 8px;
         text-align: center;
     }
-
-    .review_stars-home {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        width: 250px;
-        margin: 40px auto;
-        gap: 10px;
-        font-size: 24px;
-
-        p {
-            font-weight: 600;
-        }
-    }
-
-    .reviews_verified-home {
-        font-size: 24px; 
-    }
 }
 
 .next_sessions_container-home {
@@ -43,6 +25,11 @@
     background-color: $color_secondary;
     text-align: center;
     padding-bottom: 60px;
+
+    #btn_next_sessions_link {
+        align-self: center;
+        justify-self: center;
+    }
 
     .center {
         display: flex;
@@ -72,30 +59,53 @@
         height: 350px;
         background-image: url(images/photobureau1.png);
         background-size: cover;
+  
+        .session_card_description-home {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: start;
+            background-color: $color_transparent;
+            width: 100%;
+            height: 40%;
+            padding: 10px 20px;
+            overflow: hidden;
+
+            h3 {
+                margin-bottom: 15px;
+            }
+        }
+
+        .session_card_infos-home {
+            opacity: 0;
+        }
 
         &:hover {
+            
             .session_card_description-home {
                 transition: all 0.3s ease;
-                height: 100%;
                 justify-content: flex-start;
-                background-color: rgba(0,0,0,0.7);
+                height: 100%;
+                background-color: rgba(0,0,0,0.9);
+                left: 0;
+                top: 0;
             }
 
             .session_card_infos-home {
+                animation: 0.5s forwards 0s appear;
                 display: flex;
-                flex-flow: row wrap;
-                gap: 10px;
+                flex-flow: column wrap;
+                gap: 15px;
+                font-size: 15px;
 
                 .card_enjeux {
-                    font-size: 13px;
-                }
-
-                .card_dates {
-                    font-size: 16px;
-                }
-
-                .card_duree {
-                    font-size: 16px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
 
@@ -103,24 +113,6 @@
                 display: block;
             }
         }
-    }
-
-    .session_card_description-home {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        text-align: start;
-        background-color: $color_transparent;
-        width: 100%;
-        height: 40%;
-        padding: 10px 20px;
-    }
-
-    .session_card_infos-home {
-        display: none;
     }
 }
 
@@ -133,19 +125,6 @@
         margin: 10px 0 25px 0;
     }
 
-    /*
-    .finance_cards_bloc-home {
-        width: auto;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        background-color: $color_primary;
-
-        a {
-            width: 25%;
-        }
-    }
-    */
     .finance_cards_bloc-home {
         padding: 0 20px;
         display: flex;
@@ -193,8 +172,10 @@
 }
 
 .satisfaction_client_container-home {
-    padding: 50px;
-    background-color: $color_secondary;
+    padding: 100px;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url(images/fond/champs.jpg);
+    background-size: cover;
+    background-position: 50% 28%;
     height: auto;
     display: flex;
     flex-flow: wrap;
@@ -264,6 +245,19 @@
             position: relative;
             width: 100%;
             height: 280px;
+        }
+
+        @media (max-width: 1089px) {
+            width: 400px;
+            padding: 30px 30px 15px 30px;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            img {
+                height: 200px;
+            }
         }
 
         &:hover {
