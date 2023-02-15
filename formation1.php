@@ -3,7 +3,7 @@
 <section class="container-formation">
     <div class="upper-part bg-blue">
         <h1>Formations</h1>
-        <h2>Transformation digitale : Enjeux & Implémentation</h2>
+        <h2>Agilité : Principes & Méthodologies</h2>
     </div>
     <div class="container">
         <div class="left-part">

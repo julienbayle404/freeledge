@@ -1,0 +1,138 @@
+.container-formation-details {
+
+    .upper-part {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        height: 400px;
+        gap: 30px;
+
+        h1 {
+            font-size: 24px;
+
+            &:after {
+                content: "";
+                width: 100%;
+                display: block;
+                background-color: $white;
+                height: 2px;
+                
+            }
+        }
+    }
+
+    .container-infos {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+        background-color: $white;
+        margin: 0 100px;
+        color: $color_primary;
+        padding: 40px;
+        
+        .tags {
+
+            button {
+                background-color: $white;
+                color: $color_primary;
+                border: 1px solid $color_primary;
+                padding: 4px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color_primary;
+                    color: $white;
+                    border: 1px solid $white;
+                }
+            }
+        }
+
+        .first-section {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 30px;
+            width: 100%;
+
+            .resume-details {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 30px;
+
+                .img-container-formation-details {
+                    width: 20%;
+                }
+
+                .description-formation-details {
+                    width: 75%;
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+            }
+
+            .type-de-formation {
+                margin: 0 auto;
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    margin: 0 auto,
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .second-section {
+            display: flex;
+            gap: 50px;
+
+            ul {
+                padding-left: 30px;
+            }
+
+            h3 {
+                width: 100%;
+                text-align: center;
+                background-color: $color_primary;
+                color: $white;
+                padding: 15px;
+                font-size: 22px;
+            }
+            
+            .left-part-details {
+                width: 65%;
+
+                .objectifs ul {
+                    list-style-type: disc;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                .programme-formation {
+                    > ul:first-of-type {
+                        list-style-type: disc;
+                    }
+                }
+            }
+
+            .right-part-details {
+                width: 30%;
+            }
+        }
+    }
+}

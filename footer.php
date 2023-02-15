@@ -5,17 +5,16 @@
                     <h4>Freeledge</h4>
                     <ul>
                         <li><a href="#">À propos de nous</a></li>
-                        <li><a href="#">Nos services</a></li>
+                        <li><a href="#">Nos valeurs</a></li>
                         <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">Programme d'affiliation</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Besoin d'aide ?</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Réservation</a></li>
-                        <li><a href="#">Options de paiement</a></li>
+                        <li><a href="#">Réclamations</a></li>
+                        <li><a href="#">Inscription</a></li>
+                        <li><a href="#">Financement</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -24,7 +23,6 @@
                         <li><a href="#">Performance digitale</a></li>
                         <li><a href="#">Performance économique</a></li>
                         <li><a href="#">Performance informatique</a></li>
-                        <li><a href="#">Conseil & Coaching</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -40,7 +38,6 @@
             <div class="footer-down">
                 <div class="leftpart" id="footer-down-leftpart">
                     <div class="footer-logo">
-                        <img src="images/logofreeledgewhite.png" alt="Logo Freeledge">
                         <p>© 2023 Freeledge</p>
                     </div>
                     <div class="footer-certif">

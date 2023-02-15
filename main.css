@@ -6,6 +6,14 @@
 /* Couleurs des cercles */
 /* Couleurs secondaires pour card perf digitale, économique, informatique */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -57,12 +65,10 @@ a {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -71,6 +77,26 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.color-blue {
+  color: rgb(0, 172, 206);
+}
+
+.color-green {
+  color: rgb(138, 197, 63);
+}
+
+.color-orange {
+  color: rgb(246, 139, 41);
+}
+
+.color-red {
+  color: rgb(237, 23, 77);
+}
+
+.color-purple {
+  color: rgb(180, 72, 155);
 }
 
 body {
@@ -85,15 +111,6 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-}
-
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes appear {
@@ -118,68 +135,55 @@ h3 {
 }
 .frise-circles .circ-blue-1 {
   background-color: rgb(0, 172, 206);
-  -webkit-animation: 3s forwards 0s appear;
-          animation: 3s forwards 0s appear;
+  animation: 3s forwards 0s appear;
 }
 .frise-circles .circ-blue-2 {
   background-color: rgb(0, 170, 171);
-  -webkit-animation: 3s forwards 0.25s appear;
-          animation: 3s forwards 0.25s appear;
+  animation: 3s forwards 0.25s appear;
 }
 .frise-circles .circ-green-1 {
   background-color: rgb(11, 181, 146);
-  -webkit-animation: 3s forwards 0.5s appear;
-          animation: 3s forwards 0.5s appear;
+  animation: 3s forwards 0.5s appear;
 }
 .frise-circles .circ-green-2 {
   background-color: rgb(138, 197, 63);
-  -webkit-animation: 3s forwards 0.75s appear;
-          animation: 3s forwards 0.75s appear;
+  animation: 3s forwards 0.75s appear;
 }
 .frise-circles .circ-yellow-1 {
   background-color: rgb(253, 179, 20);
-  -webkit-animation: 3s forwards 1s appear;
-          animation: 3s forwards 1s appear;
+  animation: 3s forwards 1s appear;
 }
 .frise-circles .circ-yellow-2 {
   background-color: rgb(249, 158, 41);
-  -webkit-animation: 3s forwards 1.25s appear;
-          animation: 3s forwards 1.25s appear;
+  animation: 3s forwards 1.25s appear;
 }
 .frise-circles .circ-orange-1 {
   background-color: rgb(246, 139, 41);
-  -webkit-animation: 3s forwards 1.5s appear;
-          animation: 3s forwards 1.5s appear;
+  animation: 3s forwards 1.5s appear;
 }
 .frise-circles .circ-orange-2 {
   background-color: rgb(240, 123, 44);
-  -webkit-animation: 3s forwards 1.75s appear;
-          animation: 3s forwards 1.75s appear;
+  animation: 3s forwards 1.75s appear;
 }
 .frise-circles .circ-orange-3 {
   background-color: rgb(241, 92, 34);
-  -webkit-animation: 3s forwards 2s appear;
-          animation: 3s forwards 2s appear;
+  animation: 3s forwards 2s appear;
 }
 .frise-circles .circ-red-1 {
   background-color: rgb(237, 23, 77);
-  -webkit-animation: 3s forwards 2.25s appear;
-          animation: 3s forwards 2.25s appear;
+  animation: 3s forwards 2.25s appear;
 }
 .frise-circles .circ-pink-1 {
   background-color: rgb(233, 19, 118);
-  -webkit-animation: 3s forwards 2.5s appear;
-          animation: 3s forwards 2.5s appear;
+  animation: 3s forwards 2.5s appear;
 }
 .frise-circles .circ-purple-1 {
   background-color: rgb(180, 72, 155);
-  -webkit-animation: 3s forwards 2.75s appear;
-          animation: 3s forwards 2.75s appear;
+  animation: 3s forwards 2.75s appear;
 }
 .frise-circles .circ-purple-2 {
   background-color: rgb(111, 73, 157);
-  -webkit-animation: 3s forwards 3s appear;
-          animation: 3s forwards 3s appear;
+  animation: 3s forwards 3s appear;
 }
 
 .btn_next_sessions-home {
@@ -210,9 +214,9 @@ h3 {
   bottom: 10px;
   left: 5%;
   right: 5%;
+  animation: 0.5s forwards 0s appear;
 }
 .btn-learn-more:hover {
-  transition: all 0.3s ease;
   background-color: #fff;
   color: rgb(0, 102, 255);
   border: 1px solid rgb(0, 102, 255);
@@ -302,9 +306,6 @@ h3 {
   color: #fff;
 }
 .searchbar-home input::-moz-placeholder {
-  color: #fff;
-}
-.searchbar-home input:-ms-input-placeholder {
   color: #fff;
 }
 .searchbar-home input::placeholder {
@@ -570,6 +571,11 @@ header .leftside-header img {
   border-radius: 50%;
   box-shadow: white 0px 0px 8px 3px;
 }
+@media (max-width: 900px) {
+  header .leftside-header img {
+    width: 90px;
+  }
+}
 header .leftside-header .logo-white {
   box-shadow: none;
   border-radius: 0;
@@ -636,16 +642,13 @@ header .rightside-header .onglet_navbar-header li {
   opacity: 0;
 }
 header .rightside-header .onglet_navbar-header li:nth-child(1) {
-  -webkit-animation: 0.5s forwards 0s appear;
-          animation: 0.5s forwards 0s appear;
+  animation: 0.5s forwards 0s appear;
 }
 header .rightside-header .onglet_navbar-header li:nth-child(2) {
-  -webkit-animation: 0.5s forwards 0.1s appear;
-          animation: 0.5s forwards 0.1s appear;
+  animation: 0.5s forwards 0.1s appear;
 }
 header .rightside-header .onglet_navbar-header li:nth-child(3) {
-  -webkit-animation: 0.5s forwards 0.2s appear;
-          animation: 0.5s forwards 0.2s appear;
+  animation: 0.5s forwards 0.2s appear;
 }
 header .rightside-header .onglet_navbar-header > a {
   transition: all 0.2s ease;
@@ -821,12 +824,9 @@ header .rightside-header .menu_hamburger-header {
   justify-content: flex-start;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  left: 0;
-  top: 0;
 }
 .next_sessions_container-home .session_card-home:hover .session_card_infos-home {
-  -webkit-animation: 0.5s forwards 0s appear;
-          animation: 0.5s forwards 0s appear;
+  animation: 0.5s forwards 0s appear;
   display: flex;
   flex-flow: column wrap;
   gap: 15px;
@@ -1010,25 +1010,109 @@ header .rightside-header .menu_hamburger-header {
   height: 100%;
 }
 
-.container-formations {
-  padding-top: 100px;
-  text-align: center;
-}
-.container-formations .top_card_title {
-  font-size: 36px;
-  font-weight: 700;
-}
-.container-formations .top_card_container {
+.container-liste-formations .upper-part {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 400px;
+  gap: 30px;
 }
-.container-formations .top_card {
-  padding-top: 60px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.container-liste-formations .upper-part h1 {
+  font-size: 24px;
+}
+.container-liste-formations .upper-part h1:after {
+  content: "";
+  width: 100%;
+  display: block;
   background-color: #fff;
-  color: #000;
+  height: 2px;
+}
+.container-liste-formations .carrousel {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  border: 2px solid #fff;
+}
+.container-liste-formations .liste-formations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 25px;
+}
+.container-liste-formations .liste-formations article {
+  width: 30%;
+  min-width: 500px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: black;
+}
+@media (max-width: 800px) {
+  .container-liste-formations .liste-formations article {
+    width: 100%;
+  }
+}
+.container-liste-formations .liste-formations article .formation-title {
+  width: 100%;
+  text-align: center;
+  background-color: #212628;
+  color: #fff;
+  padding: 20px;
+}
+.container-liste-formations .liste-formations article .formation-title h3 {
+  font-size: 22px;
+}
+.container-liste-formations .liste-formations article .formation-contenu {
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+.container-liste-formations .liste-formations article .formation-contenu > div {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.container-liste-formations .liste-formations article .formation-contenu .tags button {
+  background-color: #fff;
+  color: #212628;
+  border: 1px solid #212628;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-liste-formations .liste-formations article .formation-contenu .tags button:hover {
+  background-color: #212628;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container-liste-formations .liste-formations article .formation-contenu ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+.container-liste-formations .liste-formations article .formation-contenu ul li {
+  padding: 0 15px 0 15px;
+}
+.container-liste-formations .liste-formations article .formation-contenu i {
+  width: 25px;
+}
+.container-liste-formations .liste-formations article .formation-contenu .btn-plus-formation-container {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.container-liste-formations .liste-formations article .formation-contenu .btn-plus-formation-container .btn-plus-formation {
+  width: 37px;
+  height: 35px;
+  font-size: 36px;
+  color: #2f3436;
+  border-radius: 50%;
+}
+.container-liste-formations .liste-formations article .formation-contenu .btn-plus-formation-container .btn-plus-formation:hover {
+  animation: rotate 0.5s ease;
 }
 
 .container-formation .upper-part {
@@ -1185,4 +1269,113 @@ header .rightside-header .menu_hamburger-header {
 }
 .container-infospratiques .container a:hover {
   color: #6ec5ff;
+}
+
+.container-formation-details .upper-part {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 400px;
+  gap: 30px;
+}
+.container-formation-details .upper-part h1 {
+  font-size: 24px;
+}
+.container-formation-details .upper-part h1:after {
+  content: "";
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  height: 2px;
+}
+.container-formation-details .container-infos {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  background-color: #fff;
+  margin: 0 100px;
+  color: #212628;
+  padding: 40px;
+}
+.container-formation-details .container-infos .tags button {
+  background-color: #fff;
+  color: #212628;
+  border: 1px solid #212628;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-formation-details .container-infos .tags button:hover {
+  background-color: #212628;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container-formation-details .container-infos .first-section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  width: 100%;
+}
+.container-formation-details .container-infos .first-section .resume-details {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+.container-formation-details .container-infos .first-section .resume-details .img-container-formation-details {
+  width: 20%;
+}
+.container-formation-details .container-infos .first-section .resume-details .description-formation-details {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container-formation-details .container-infos .first-section .type-de-formation {
+  margin: 0 auto;
+  text-align: center;
+}
+.container-formation-details .container-infos .first-section .type-de-formation img {
+  width: 100px;
+  margin: 0 auto;
+}
+.container-formation-details .container-infos .first-section .type-de-formation p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.container-formation-details .container-infos .second-section {
+  display: flex;
+  gap: 50px;
+}
+.container-formation-details .container-infos .second-section ul {
+  padding-left: 30px;
+}
+.container-formation-details .container-infos .second-section h3 {
+  width: 100%;
+  text-align: center;
+  background-color: #212628;
+  color: #fff;
+  padding: 15px;
+  font-size: 22px;
+}
+.container-formation-details .container-infos .second-section .left-part-details {
+  width: 65%;
+}
+.container-formation-details .container-infos .second-section .left-part-details .objectifs ul {
+  list-style-type: disc;
+}
+.container-formation-details .container-infos .second-section .left-part-details h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.container-formation-details .container-infos .second-section .left-part-details h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.container-formation-details .container-infos .second-section .left-part-details .programme-formation > ul:first-of-type {
+  list-style-type: disc;
+}
+.container-formation-details .container-infos .second-section .right-part-details {
+  width: 30%;
 }/*# sourceMappingURL=main.css.map */

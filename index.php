@@ -172,8 +172,8 @@
 
     <section class="reconversion_job_container-home">
         <div class="container">
-            <h2 class="container-title">Vous souhaitez vous former dans un secteur en particulier ?</h2>
-            <p class="container-description">Découvrez toutes les formations disponibles chez Freeledge, classées par type de performance.</p>
+            <h2 class="container-title">Découvrir notre offre</h2>
+            <p class="container-description">Découvrez toutes les formations disponibles, classées par performance.</p>
             <div class="reconversion_job_cards_container-home">
                 <a class="reconversion_job_card_link-home" href="#">
                     <article class="reconversion_job_card-home perf-digitale">

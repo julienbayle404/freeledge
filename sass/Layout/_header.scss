@@ -32,6 +32,10 @@ header {
             width: 100px;
             border-radius: 50%;
             box-shadow: white 0px 0px 8px 3px; 
+
+            @media (max-width: 900px) {
+                width: 90px;
+            }
         }
 
         .logo-white {

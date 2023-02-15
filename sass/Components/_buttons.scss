@@ -27,9 +27,9 @@
     bottom: 10px;
     left: 5%;
     right: 5%;
+    animation: 0.5s forwards 0s appear;
 
     &:hover {
-        transition: all 0.3s ease;
         background-color: $white;
         color: rgb(0, 102, 255);
         border: 1px solid rgb(0, 102, 255);
