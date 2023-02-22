@@ -62,89 +62,142 @@
                     <h3>Le programme de la formation</h3>
 
 <!-- 1er sous titre -->
-
-                    <h4>1. Agilité : concepts de base</h4>
-                    <p>Origine</p>
-                    <p>Principes et Logiques</p>
-                    <ul>
-                        <li>Manifeste agile</li>
-                        <li>Waterfall VS Agile</li>
-                        <li>Définitions & perspectives</li>
-                        <li>Mindset agile</li>
-                        <li>Démarche itérative</li>
-                    </ul>
+                    <div class="sous-partie-infos">
+                        <h4>1. Agilité : concepts de base</h4>
+                        <p>Origine</p>
+                        <p>Principes et Logiques</p>
+                        <ul>
+                            <li>Manifeste agile</li>
+                            <li>Waterfall VS Agile</li>
+                            <li>Définitions & perspectives</li>
+                            <li>Mindset agile</li>
+                            <li>Démarche itérative</li>
+                        </ul>
 
 <!-- 2ème sous titre -->
 
-                    <h4>2. Leadership</h4>
-                    <p>Leadership Vs Management</p>
-                    <p>Styles de leadership</p>
-                    <p>Leadership situationnel</p>
-                    <p>Niveaux de leadership</p>
+                        <h4>2. Leadership</h4>
+                        <p>Leadership Vs Management</p>
+                        <p>Styles de leadership</p>
+                        <p>Leadership situationnel</p>
+                        <p>Niveaux de leadership</p>
 
 <!-- 3ème sous titre -->
 
-                    <h4>3. Overview des méthodes & frameworks agiles</h4>
-                    <p>User stories</p>
-                    <p>Grille INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable)</p>
-                    <p>Priorisation des user stories - La méthode MoSCoW</p>
-                    <p>Méthodes / Complexité projet</p>
+                        <h4>3. Overview des méthodes & frameworks agiles</h4>
+                        <p>User stories</p>
+                        <p>Grille INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable)</p>
+                        <p>Priorisation des user stories - La méthode MoSCoW</p>
+                        <p>Méthodes / Complexité projet</p>
 
 <!-- 3ème sous titre - Partie 1 -->
 
-                    <h5>3.1 Scrum</h5>
-                    <p>Origine & définitions</p>
-                    <p>Objectifs & principes de base</p>
-                    <p>Rôles & acteurs (Product Owner, Scrum Master, …)</p>
-                    <p>Product Backlog</p>
+                        <h5>3.1 Scrum</h5>
+                        <p>Origine & définitions</p>
+                        <p>Objectifs & principes de base</p>
+                        <p>Rôles & acteurs (Product Owner, Scrum Master, …)</p>
+                        <p>Product Backlog</p>
 
 <!-- 3ème sous titre - Partie 2 -->
 
-                    <h5>3.2 Kanban</h5>
-                    <p>Principes de base</p>
-                    <p>Avantages / Confusions</p>
-                    <p>Logique & Méthodologie Kanban</p>
+                        <h5>3.2 Kanban</h5>
+                        <p>Principes de base</p>
+                        <p>Avantages / Confusions</p>
+                        <p>Logique & Méthodologie Kanban</p>
 
 <!-- 3ème sous titre - Partie 3 -->
 
-                    <h5>3.3 SAFe</h5>
-                    <p>Logique</p>
-                    <p>Schéma directeur</p>
-                    <p>Travaux pratiques: études de cas, applications.</p>
+                        <h5>3.3 SAFe</h5>
+                        <p>Logique</p>
+                        <p>Schéma directeur</p>
+                        <p>Travaux pratiques: études de cas, applications.</p>
+                    </div>
                     
                 </div>
             </div>
             <div class="right-part-details">
                 <div class="formateur">
                     <h3>Formateur</h3>
+                    <div class="sous-partie-infos">
+                        <p>Un consultant formateur expérimenté de notre réseau ad-hoc d'experts certifiés dans leurs domaines d'intervention</p>
+                        <a href="#">Chokri Zanzouri</a>
+                        <p>Formateur Consultant Associé</p>
+                        <p>Issues d'une juxtaposition de divers cursus universitaires (enseignement et recherche) et professionnels (formation et consulting), mes interventions se focalisent sur la stratégie 
+                            comme étant le cœur de métier. Autour de ce cœur se positionnent les systèmes d'information et le knowledge management comme des piliers dans l'optique de créer de la valeur 
+                            ajoutée à partir de ses savoirs et bases de connaissances. Afin d'orienter cette création de valeur vers un client mieux satisfait et fidélisé, une couche de 
+                            marketing marque l'ensemble de mes domaines d'intervention.</p>
+                    </div>
                 </div>
                 <div class="enjeu-professionnel">
                     <h3>L'enjeu professionnel</h3>
+                    <div class="sous-partie-infos">
+                        <p>Adopter un état d'esprit agile et connaitre le sens des méthodologies y afférentes constituent un levier de facilitation 
+                            mais aussi de perfectionnement de la transition d'une méthode classique vers une logique agile.</p>
+                    </div>
+
                 </div>
                 <div class="avis-formateur">
                     <h3>L'avis du formateur</h3>
+                    <div class="sous-partie-infos">
+                        <p>L'agilité en fin de compte s'invite de plus en plus sur le devant de la scène managériale des projets, et ce afin de fournir notamment quelques perspectives 
+                            alternatives aux méthodes classiques "Waterfall" face à un environnement turbulent et incertain.</p>
+                    </div>
                 </div>
                 <div class="notations-pedagogiques">
                     <h3>Notations pédagogiques</h3>
+                    <div class="sous-partie-infos">
+                        <p>Présentation par visio-synchrone.</p>
+                        <p>Mise en situation et temps d'échanges.</p>
+                        <p>Mini études de cas.</p>
+                    </div>
                 </div>
                 <div class="public-prerequis">
                     <h3>Public et prérequis</h3>
+                    <div class="sous-partie-infos">
+                        <ul>
+                            <li>Managers de projet</li>
+                            <li>Développeurs</li>
+                            <li>Architectes</li>
+                            <li>Futurs <a href="#">Scrum Masters</a>, Product Owners et managers Agiles</li>
+                            <li>Commerciaux, responsables méthodes, MOA.</li>
+                        </ul>
+                        <ul>Salariés d'entreprise
+                            <li><a href="#">OPCO AKTO</a></li>
+                            <li><a href="#">Formulaire d'inscription</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="portee">
                     <h3>Portée</h3>
+                    <div class="sous-partie-infos">
+                        <p>Formation inter et intra</p>
+                    </div>
                 </div>
                 <div class="modalites">
                     <h3>Modalités</h3>
+                    <div class="modalites-infos">
+                        <p><strong>Lieu</strong> : à définir</p>
+                        <p><strong>Dates</strong> : Les 12 et 13 décembre 2022</p>
+                        <p><strong>Horaires</strong> : De 9h à 12h et de 13h à 17h</p>
+                    </div>
                 </div>
                 <div class="duree">
                     <h3>Durée</h3>
+                    <div class="sous-partie-infos">
+                        <p>2 jours</p>
+                        <p>14 heures</p>
+                    </div>
                 </div>
                 <div class="prix">
                     <h3>Prix</h3>
+                    <div class="sous-partie-infos">
+                        <p>1200 €</p>
+                    </div>
                 </div>
-                <button class="nous-contacter">Nous contacter</button>
-                <button class="inscription">S'inscrire à cette formation</button>
-
+                <div class="formationdetails-buttons">
+                    <button class="inscription btn-formationdetails">S'inscrire à cette formation</button>
+                    <button class="nous-contacter btn-formationdetails">Nous contacter</button>
+                </div>
             </div>
         </div>
     </div>

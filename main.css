@@ -73,6 +73,10 @@ a {
     scroll-behavior: auto !important;
   }
 }
+.strong {
+  font-weight: 700;
+}
+
 .center {
   width: 100%;
   margin: 0 auto;
@@ -283,6 +287,39 @@ h3 {
   background-color: #fff;
   color: rgb(23, 115, 235);
   border-color: rgb(23, 115, 235);
+}
+
+.btn-formationdetails {
+  background-color: rgb(11, 181, 146);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-formationdetails:hover {
+  background-color: #098f73;
+}
+
+.call-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.call-buttons button {
+  background-color: rgb(11, 181, 146);
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.call-buttons button:hover {
+  background-color: #098f73;
 }
 
 .searchbar-home {
@@ -1295,9 +1332,34 @@ header .rightside-header .menu_hamburger-header {
   flex-flow: column wrap;
   gap: 30px;
   background-color: #fff;
-  margin: 0 100px;
+  margin: 50px;
   color: #212628;
   padding: 40px;
+}
+@media (max-width: 1000px) {
+  .container-formation-details .container-infos {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container-formation-details .container-infos .sous-partie-infos {
+  padding: 20px 10px;
+}
+.container-formation-details .container-infos .sous-partie-infos > h4, .container-formation-details .container-infos h5 {
+  padding: 20px;
+}
+.container-formation-details .container-infos a {
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(8, 107, 255);
+}
+.container-formation-details .container-infos a:hover {
+  color: #6ea8ff;
+}
+.container-formation-details .container-infos ul {
+  list-style-type: disc;
+  padding-left: 30px;
 }
 .container-formation-details .container-infos .tags button {
   background-color: #fff;
@@ -1324,7 +1386,7 @@ header .rightside-header .menu_hamburger-header {
   gap: 30px;
 }
 .container-formation-details .container-infos .first-section .resume-details .img-container-formation-details {
-  width: 20%;
+  width: 250px;
 }
 .container-formation-details .container-infos .first-section .resume-details .description-formation-details {
   width: 75%;
@@ -1347,8 +1409,10 @@ header .rightside-header .menu_hamburger-header {
   display: flex;
   gap: 50px;
 }
-.container-formation-details .container-infos .second-section ul {
-  padding-left: 30px;
+@media (max-width: 1000px) {
+  .container-formation-details .container-infos .second-section {
+    display: block;
+  }
 }
 .container-formation-details .container-infos .second-section h3 {
   width: 100%;
@@ -1362,7 +1426,7 @@ header .rightside-header .menu_hamburger-header {
   width: 65%;
 }
 .container-formation-details .container-infos .second-section .left-part-details .objectifs ul {
-  list-style-type: disc;
+  padding: 30px;
 }
 .container-formation-details .container-infos .second-section .left-part-details h4 {
   font-size: 20px;
@@ -1376,6 +1440,111 @@ header .rightside-header .menu_hamburger-header {
 .container-formation-details .container-infos .second-section .left-part-details .programme-formation > ul:first-of-type {
   list-style-type: disc;
 }
+@media (max-width: 1000px) {
+  .container-formation-details .container-infos .second-section .left-part-details {
+    width: 100%;
+  }
+}
 .container-formation-details .container-infos .second-section .right-part-details {
-  width: 30%;
+  width: 33%;
+}
+.container-formation-details .container-infos .second-section .right-part-details .modalites-infos {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 12px 5px;
+}
+.container-formation-details .container-infos .second-section .right-part-details strong {
+  font-weight: 700;
+}
+.container-formation-details .container-infos .second-section .right-part-details .formationdetails-buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+@media (max-width: 1000px) {
+  .container-formation-details .container-infos .second-section .right-part-details {
+    width: 100%;
+  }
+}
+
+.container-formateurs .upper-part {
+  background-color: #212628;
+  background-image: linear-gradient(to bottom, rgba(133, 133, 133, 0.3), rgba(126, 126, 126, 0.8)), url(images/photobureau4.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.container-formateurs .upper-part h1 {
+  font-size: 24px;
+}
+.container-formateurs .upper-part h1:after {
+  content: "";
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  height: 2px;
+}
+.container-formateurs .container {
+  padding: 50px 80px;
+}
+.container-formateurs .container .formateurs-cards-container {
+  display: flex;
+  gap: 30px;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+.container-formateurs .container .formateurs-cards-container .formateur-card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #212628;
+}
+.container-formateurs .container .formateurs-cards-container .formateur-card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.container-formateurs .container .formateurs-cards-container .formateur-card .tags button {
+  background-color: #fff;
+  color: #212628;
+  border: 1px solid #212628;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-formateurs .container .formateurs-cards-container .formateur-card .tags button:hover {
+  background-color: #212628;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container-formateurs .container .carrousel {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  border: 2px solid #fff;
+}
+.container-formateurs .container .infos-freeledge {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  gap: 20px;
+}
+.container-formateurs .container .infos-freeledge img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
