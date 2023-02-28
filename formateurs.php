@@ -39,6 +39,18 @@
                 <div class="tags">
                     <button>Marketing</button>
                     <button>Digital</button>
+                    <button>Management</button>
+                    <button>Développement Web</button>
+                </div>
+            </article>
+            <article class="formateur-card">
+                <img src="images/photobureau1.png" alt="Photo du formateur">
+                <h2>Prénom Nom</h2>
+                <h3>Formateur</h3>
+                <div class="tags">
+                    <button>Marketing</button>
+                    <button>Digital</button>
+                    <button>Développement Web</button>
                 </div>
             </article>
             <article class="formateur-card">
@@ -57,15 +69,7 @@
                 <div class="tags">
                     <button>Marketing</button>
                     <button>Digital</button>
-                </div>
-            </article>
-            <article class="formateur-card">
-                <img src="images/photobureau1.png" alt="Photo du formateur">
-                <h2>Prénom Nom</h2>
-                <h3>Formateur</h3>
-                <div class="tags">
-                    <button>Marketing</button>
-                    <button>Digital</button>
+                    <button>Management</button>
                 </div>
             </article>
             <article class="formateur-card">

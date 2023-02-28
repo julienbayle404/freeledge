@@ -26,15 +26,15 @@
                 <li class="onglet_navbar-header" id="onglet_formations">
                     <a href="#" class="blue">Formations</a>
                     <ul class="dropdown_navbar-header" id="dropdown-formations">
-                        <li><a href="#">Informatique</a></li>
-                        <li><a href="#">Economique</a></li>
-                        <li><a href="#">Digitale</a></li>
+                        <li><a href="formations.php">Informatique</a></li>
+                        <li><a href="formations.php">Economique</a></li>
+                        <li><a href="formations.php">Digitale</a></li>
                     </ul>
                 </li>
                 <li class="onglet_navbar-header">
                     <a href="#" class="green">Ressources</a>
                     <ul class="dropdown_navbar-header" id="dropdown-ressources">
-                        <li><a href="#">Formateurs</a></li>
+                        <li><a href="formateurs.php">Formateurs</a></li>
                         <li><a href="#">Conseillers</a></li>
                         <li><a href="#">Compétences</a></li>
                     </ul>

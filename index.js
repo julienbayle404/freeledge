@@ -77,8 +77,15 @@ const lienMenuDeroulant = document.querySelectorAll(".onglet_navbar-header > a")
 const menuDeroulant = document.querySelectorAll(".dropdown_navbar-header");
 
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  lienMenuDeroulant.addEventListener('click', function(event) {
+  lienMenuDeroulant.forEach(function(lien) {
+    lien.addEventListener('click', function(event) {
       event.preventDefault();
       menuDeroulant.style.display = 'block';
   });
+});
+}
+
+if (window.location.pathname === "/Freeledge/index.php") {
+  var header = document.getElementById("header");
+  header.style.setProperty('background-color', 'transparent', 'important');
 }

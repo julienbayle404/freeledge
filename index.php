@@ -26,11 +26,11 @@
             <span class="circle circ-purple-2"></span>
         </div>
         <h1 class="searchbar_title-home">Vous êtes à la recherche d'une formation ?</h1>
-        <form action="https://www.google.com/search" method="get" class="searchbar-home">
-            <input type="text" placeholder="Insérer des mots-clés ...">
-            <a href="#">
+        <form method="POST" action="recherche.php" class="searchbar-home">
+            <input type="text" name="search" placeholder="Insérer des mots-clés ...">
+            <button type="submit">
                 <i class="fa-solid fa-magnifying-glass searchbar-icon"></i>
-            </a>
+            </button>
         </form>
         <p class="searchbar_exemples-home">Ex. : Scrum, PHP, Management, Webmarketing, ...</p>
     </section>
