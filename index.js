@@ -85,7 +85,3 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 });
 }
 
-if (window.location.pathname === "/Freeledge/index.php") {
-  var header = document.getElementById("header");
-  header.style.setProperty('background-color', 'transparent', 'important');
-}
